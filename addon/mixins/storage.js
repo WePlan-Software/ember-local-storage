@@ -65,7 +65,6 @@ export default Mixin.create({
 
         if (event.storageArea === storage && event.key === storageKey) {
           if (
-            (!this._testing) ||
             event.newValue === event.oldValue ||
             event.newValue === JSON.stringify(this.get('content'))
           ) {
