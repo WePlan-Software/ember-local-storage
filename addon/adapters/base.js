@@ -1,4 +1,3 @@
-import { keys } from '@ember/polyfills';
 import RSVP from 'rsvp';
 import { run } from '@ember/runloop';
 import { isEmpty, typeOf } from '@ember/utils';
@@ -10,7 +9,7 @@ import {
 } from 'ember-local-storage/helpers/import-export';
 import { _buildKey } from 'ember-local-storage/helpers/storage';
 
-const getKeys = Object.keys || keys;
+const getKeys = Object.keys;
 
 // Ember data ships with ember-inflector
 import { singularize, pluralize } from 'ember-inflector';
